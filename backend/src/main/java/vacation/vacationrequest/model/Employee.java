@@ -23,6 +23,10 @@ public class Employee {
     private Integer remainingVacationDays;
     private LocalDateTime createdAt;
 
+    public Employee() {
+        this.createdAt = LocalDateTime.now();
+    }
+
     public Long getId() {
         return id;
     }

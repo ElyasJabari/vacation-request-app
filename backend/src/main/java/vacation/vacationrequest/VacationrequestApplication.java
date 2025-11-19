@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import vacation.vacationrequest.repository.EmployeeRepository;
+import vacation.vacationrequest.repository.VacationRequestRepository;
 
 @SpringBootApplication
 public class VacationrequestApplication {
@@ -15,7 +15,7 @@ public class VacationrequestApplication {
 	}
 
 	@Bean
-    CommandLineRunner runner(EmployeeRepository repo) {
+    CommandLineRunner runner(VacationRequestRepository repo) {
         return args -> {
             System.out.println("### EmployeesTest: " + repo.findAll());
         };

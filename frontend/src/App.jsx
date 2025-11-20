@@ -1,7 +1,11 @@
+import EmployeeApi from "./api/EmployeeApi";
+
 function App() {
   return (
     <>
-      <div></div>
+      <div>
+        <EmployeeApi />
+      </div>
     </>
   );
 }

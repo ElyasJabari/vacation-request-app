@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Login from "../pages/Login.jsx";
 
 export default function Config() {
   const [employees, setEmployees] = useState([]);
@@ -22,6 +23,7 @@ export default function Config() {
           <h2>{employee.firstName}</h2>
         </div>
       ))}
+      <Login employees={employees} />
     </div>
   );
 }

@@ -2,6 +2,7 @@ package vacation.vacationrequest.controller;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +12,7 @@ import vacation.vacationrequest.repository.VacationRequestRepository;
 
 @RestController
 @RequestMapping("/vacation")
+@CrossOrigin(origins = "*")
 public class VacationRequestController {
     private VacationRequestRepository repository;
 

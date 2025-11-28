@@ -16,6 +16,7 @@ export default function Login({ employees }) {
     );
 
     if (user) {
+      localStorage.setItem("loggedInUser", JSON.stringify(user));
       if (user.role === "Admin") {
         navigate("admin");
       } else {
